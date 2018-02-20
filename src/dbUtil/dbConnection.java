@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class dbConnection {
 
     private static final String SQCONN = "jdbc:sqlite:school.sqlite";
-    private static Connection getConnection(){
+    public static Connection getConnection(){
         try {
             Class.forName("org.sqlite.JDBC");
             return DriverManager.getConnection(SQCONN);
